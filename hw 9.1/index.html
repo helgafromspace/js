@@ -1,0 +1,22 @@
+html
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Task</title>
+</head>
+<body>
+  <p>Інший текст </p>
+  <p id="myParagraph">Початковий текст</p>
+  <button onclick="changeText('myParagraph', 'Новий текст')">Змінити текст</button>
+
+  <script>
+    let changeText = function (id,text){
+      let target = document.querySelectorAll('p');
+      target[1].textContent = text
+    }
+
+    module.exports = changeText; // не видаляти цей код
+  </script>
+</body>
+</html>
