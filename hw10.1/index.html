@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Task</title>
+</head>
+<body>
+  <div id="myBox" style="width: 100px; height: 100px; background-color: grey;"></div>
+  <button onclick="changeBackgroundColor('myBox', 'blue')">Змінити колір</button>
+
+  <script>
+    let changeBackgroundColor = function(id, color){
+        let target = document.getElementById(id)
+        target.style.background = color;
+    }
+    module.exports = changeBackgroundColor; // не видаляти цей код
+  </script>
+</body>
+</html>
