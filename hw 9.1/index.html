@@ -12,8 +12,8 @@ Copy code
 
   <script>
     let changeText = function (id,text){
-      let target = document.querySelectorAll('p');
-      target[1].innerHTML = text
+      let target = document.querySelector('#myParagraph');
+      target.innerHTML = text
     }
 
     module.exports = changeText; // не видаляти цей код
