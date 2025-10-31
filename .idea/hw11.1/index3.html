@@ -5,10 +5,11 @@
 </head>
 <body>
   <button id="myButton">Натисни мене</button>
-
   <script>
-    let handleClick = document.addEventListener('click', () => {
-        console.log("Кнопку натиснуто");
+    let handleClick = () => console.log('Кнопку натиснуто');
+    let button = document.getElementById('myButton');
+    button.addEventListener('click', () => {
+        handleClick();
     })
     module.exports = handleClick; // не видаляти цей код
   </script>
