@@ -36,5 +36,25 @@
 // console.log('dsd' + (+'dsssd'))
 // console.log(typeof(NaN))
 // console.log('Hello' * 3)
-let x;
-console.log(!0)
+// let x;
+// console.log(!0)
+
+
+// function pow(x, n){
+//     let res = 1
+//     for (let i = 1; i <= n; i++){
+//         res *= x
+//     }
+//     return res
+// }
+
+// // let pow = (x, n) => {
+// //     let res = 1
+// //     for (let i = 1; i <= n; i++){
+// //         res *= x
+// //     }
+// //     return res
+// // }
+
+// console.log(pow(2,3))
+// console.log(pow(5,3))
