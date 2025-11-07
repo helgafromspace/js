@@ -8,19 +8,52 @@
 // console.log(typeof(s))
 // console.log(typeof(s1))
 // console.log(typeof(parseInt(s1)))
+// let s = 'h'
+// console.log(s.length)
+// let s1 = s.padStart(5,'*')
+// console.log(s1.length)
+// console.log(s1)
 
-function checkProbabilityTheory(count){
-    let countEven = 0; // парні
-    let countOdd = 0; // непарні
-    for (let i = 0; i < count; i++){
-        let num = Math.floor(Math.random() * (1000 - 100 + 1)) + 100;
-        console.log(num);
-        (num % 2 == 0) ? countEven++ : countOdd++;
-        console.log(countEven)
-        console.log(countOdd)
+var services = {
+"стрижка": "60 грн",
+"гоління": "80 грн",
+"Миття голови": "100 грн",
+'price': function() {
+    let sum = 0;
+    for (key in services){
+        if (typeof(services[key]) == 'string'){
+            let num = parseInt(services[key]);
+            sum += num;
+        }
     }
-    let evenToOddPercent = (countEven  / countOdd) * 100;
-   return `Кількість згенерованих чисел: ${count}; Кількість парних: ${countEven}; Кількість непарних:${countOdd}; Відсоток парних до непарних:${evenToOddPercent} %` 
+    return sum
+},
+'minPrice': function (){
+    min = services.price()
+    for (key in services){
+        if (typeof(services[key]) == 'string'){
+            let num = parseInt(services[key]);
+            if(num < min){
+                min = num;
+            }
+            }
+        }
+    return `min ${min}`
+    },
+'maxPrice': function (){
+    max = 0
+    for (key in services){
+        if (typeof(services[key]) == 'string'){
+            let num = parseInt(services[key]);
+            if(num > max){
+                max = num;
+            }
+            }
+        }
+    return `max ${max}`
+}
 }
 
-console.log(checkProbabilityTheory(3))
+console.log(services.price())
+console.log(services.minPrice())
+console.log(services.maxPrice())
