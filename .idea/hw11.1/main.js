@@ -26,10 +26,10 @@ var services = {
             sum += num;
         }
     }
-    return sum
+    return `sum ${sum}`
 },
 'minPrice': function (){
-    min = services.price()
+    min = Infinity
     for (key in services){
         if (typeof(services[key]) == 'string'){
             let num = parseInt(services[key]);
@@ -51,9 +51,23 @@ var services = {
             }
         }
     return `max ${max}`
-}
+},
 }
 
+
+console.log(Object.keys(services))
+console.log(services.price())
+console.log(services.minPrice())
+console.log(services.maxPrice())
+
+services['Розбити скло'] = '200 грн';
+console.log(Object.keys(services))
+console.log(services.price())
+console.log(services.minPrice())
+console.log(services.maxPrice())
+
+services['Почистити вуха'] = '50 грн';
+console.log(Object.keys(services))
 console.log(services.price())
 console.log(services.minPrice())
 console.log(services.maxPrice())
