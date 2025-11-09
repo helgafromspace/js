@@ -5,11 +5,30 @@
 </head>
 <body>
     <form>
-        <label for="input">Name</label>
-        <input type="text" id="name" name="name" placeholder="Type name">
-        <label for="input">Email</label>
-        <input type="text" id="email" name="email" placeholder="Type mail">
-        <button type="submit">Submit</button>
+        <!-- <label for="input">Name</label>
+        <input type="text" id="name" name="name" placeholder="Type name" disabled> -->
+        <!-- <label for="input">Email</label>
+        <input type="text" id="email" name="email" placeholder="Type mail"> -->
+         <!-- <label for="input">Enabled</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <p></p>
+        <button type="submit">Submit</button> -->
+        <label for="country">Country</label>
+        <select id="country">
+            <option value="'USA">USA</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="France">France</option>
+        </select>
+        <h3> Select your gender</h3>
+        <label for="male">
+            <input type="radio" id="male" class="gender" name="gender" value="Male"> Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" class="gender" name="gender" value="Female"> Female
+        </label>
+        <label for="other">
+            <input type="radio" id="other" class="gender" name="gender" value="Other"> Other
+        </label>
     </form>
   <script src = './main.js'></script>
 </body>
