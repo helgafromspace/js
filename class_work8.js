@@ -64,7 +64,7 @@ let productQuantity1 = 5;  // кількість одениць 1го проду
 let productQuantity2 = 9;  // кількість одениць 2го продукту на складі 
 let productQuantity3 = 15; // кількість одениць 3го продукту на складі 
 
-let price = function (productPrice,productQuantity){
+let productPrice = function (productPrice,productQuantity){
   return productPrice * productQuantity;
 }
 
@@ -76,4 +76,4 @@ let avgPrice = function (...prices){
   return Math.floor(sum/prices.length);
 }
 
-console.log(avgPrice(price(productPrice1,productQuantity1),price(productPrice2,productQuantity2),price(productPrice3,productQuantity3)))
+console.log(avgPrice(productPrice (productPrice1,productQuantity1),productPrice (productPrice2,productQuantity2),productPrice (productPrice3,productQuantity3)))
