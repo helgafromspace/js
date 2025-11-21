@@ -56,24 +56,56 @@
 Виведіть на екран cередню ціну на продукти
  */
 
-let productPrice1 = 101.5; // ціна 1го продукту
-let productPrice2 = 50.25; // ціна 2го продукту
-let productPrice3 = 10.11; // ціна 3го продукту
+// let productPrice1 = 101.5; // ціна 1го продукту
+// let productPrice2 = 50.25; // ціна 2го продукту
+// let productPrice3 = 10.11; // ціна 3го продукту
 
-let productQuantity1 = 5;  // кількість одениць 1го продукту на складі 
-let productQuantity2 = 9;  // кількість одениць 2го продукту на складі 
-let productQuantity3 = 15; // кількість одениць 3го продукту на складі 
+// let productQuantity1 = 5;  // кількість одениць 1го продукту на складі 
+// let productQuantity2 = 9;  // кількість одениць 2го продукту на складі 
+// let productQuantity3 = 15; // кількість одениць 3го продукту на складі 
 
-let productPrice = function (productPrice,productQuantity){
-  return productPrice * productQuantity;
-}
+// let productPrice = function (productPrice,productQuantity){
+//   return productPrice * productQuantity;
+// }
 
-let avgPrice = function (...prices){
-  let sum = 0;
-  for(i=0; i < prices.length; i++){
-    sum += prices[i];
-  }
-  return Math.floor(sum/prices.length);
-}
+// let avgPrice = function (...prices){
+//   let sum = 0;
+//   for(i=0; i < prices.length; i++){
+//     sum += prices[i];
+//   }
+//   return Math.floor(sum/prices.length);
+// }
 
-console.log(avgPrice(productPrice (productPrice1,productQuantity1),productPrice (productPrice2,productQuantity2),productPrice (productPrice3,productQuantity3)))
+// console.log(avgPrice(productPrice (productPrice1,productQuantity1),productPrice (productPrice2,productQuantity2),productPrice (productPrice3,productQuantity3)))
+
+// console.log(/a\w{2,}c/.test('abklbc'))
+
+// var arr = [
+//     {
+//         userName:"Test",
+//         lastName:"Test",
+//         email:"test.test@gmail.com"
+//     },
+//     {
+//         userName:"Test2",
+//         lastName:"Test",
+//         email:"test2@gmail.com"// test for one word email
+//     },
+//     {
+//         userName:"Dmitro",
+//         lastName:"Porohov",
+//         email:"dmitro.porohov@yahoo.com>"
+//     },
+//     {
+//         userName:"Andrii",
+//         lastName:"",
+//         email:"andrii@mail.ru" // Нам такі не підходять
+//     },
+// ];
+
+// let arrToString = JSON.stringify(arr);
+// console.log(arrToString)
+// let re = /\w+[@]gmail.com|\w+[.]\w+[@]gmail.com|\w+[@]yahoo.com|\w+[.]\w+[@]yahoo.com/g;
+// let res = arrToString.match(re);
+// console.log(res)
+
