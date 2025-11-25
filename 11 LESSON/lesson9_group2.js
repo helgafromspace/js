@@ -1,14 +1,21 @@
 // // Напишіть regex, котрий знайде кількість чашок кофе.
 
 // var text = 'I would like 8 cups of coffee, please.';
+// let re = /\d/g
+// console.log(text.match(re))
 
 // // Напишіть regex, котрий знайде ВСІ слова від 4 до 6 символів
 
 // var text = 'Hello people of 1974. I come from the future. In 2014 we have laser guns, hover boards and live on the moon!';
 
+// let re = /\w{4,6}/g
+// console.log(text.match(re))
 // // Поміняйте місцями ім'я та прізвище
 
-// var name = 'John Smith';
+var name_v= 'John Smith';
+let re = /(John) (Smith)/
+let res = name_v.replace(re,"$2, $1");
+console.log(res)
 
 // //--------------------------------------------------------------------------
 // Завдання - 1
